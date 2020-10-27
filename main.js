@@ -47,9 +47,19 @@ $(document).ready(function(){
     // BONUS: cliccando su un pallino, si attiva l'immagine corrispondente. Ad esempio: sto visualizzando la prima immagine, clicco sul quarto pallino e si attiva direttamente la quarta immagine (oltre al pallino corrispondente ovviamente!)
 
     $('.fa-circle').click(function(){
+
+        //creo variabile che selezioni il tag che ha la classe 'fas'
         var currentSelected = $('.fa-circle.fas');
+        //applico toggleClass per cmabiare fas con far e viceversa
         currentSelected.toggleClass('fas far');
+        //seleziono solo un cerchio usando this e qnd clicco fa il switch
         $(this).toggleClass('fas far');
+
+        //creo variabile per img corrente
+        // var selectedImg = $('img.active')
+        // selectedImg.removeClass('active');
+        //
+
 
     });
 
