@@ -44,4 +44,11 @@ $(document).ready(function(){
         }
     });
 
+    // BONUS: cliccando su un pallino, si attiva l'immagine corrispondente. Ad esempio: sto visualizzando la prima immagine, clicco sul quarto pallino e si attiva direttamente la quarta immagine (oltre al pallino corrispondente ovviamente!)
+
+    $('.fa-circle').click(function(){
+        $(this).toggleClass('fas far');
+
+    });
+
 });
