@@ -14,6 +14,11 @@
 .slide, .prev, .next {
     float: left;
 }
+.slide-container::after {
+    clear: both;
+    content: "";
+    display: table;
+}
 
 .prev, .next {
     width: 10%;
@@ -21,10 +26,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .slide {
     width: 80%;
     height: 100%;
     border: 1px solid black
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+#ironman, #capt, #thor {
+    object-position: 0 20%;
+}
+
+.slide img.active {
+    display: block;
 }
