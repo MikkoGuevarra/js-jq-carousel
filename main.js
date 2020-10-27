@@ -5,14 +5,13 @@ $(document).ready(function(){
 
         //rimuovo class 'active' img corrente
         currentImg.removeClass('active');
-
         //creo condizione se img corrente ==1 add class
         //se no  ritorna alla prima img
         if (currentImg.next().length) {
             //add class 'active' next img
             currentImg.next().addClass('active');
         } else {
-            $('slide :first-child').addClass('active');
+            $('.slide :first-child').addClass('active');
         }
     });
 
@@ -29,7 +28,7 @@ $(document).ready(function(){
             //add class 'active' prev img
             currentImg.prev().addClass('active');
         } else {
-            $('slide :last-child').addClass('active');
+            $('.slide :last-child').addClass('active');
         }
     });
 
