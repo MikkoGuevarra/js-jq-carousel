@@ -60,6 +60,9 @@ $(document).ready(function(){
         // selectedImg.removeClass('active');
         //
 
+        var index = $(".fa-circle").index(this);
+        $("span").text( "That was div index #" + index );
+
 
     });
 
