@@ -60,4 +60,5 @@
 
 .dots .fa-circle {
     color: red;
+    cursor: pointer;
 }
