@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slide-container {
+    width: 800px;
+    height: 500px;
+    border: 2px solid black;
+    margin: auto;
+}
+
+.slide, .prev, .next {
+    float: left;
+}
+
+.prev, .next {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide {
+    width: 80%;
+    height: 100%;
+    border: 1px solid black
+}
