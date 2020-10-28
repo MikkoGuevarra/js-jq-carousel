@@ -7,8 +7,6 @@ $(document).ready(function(){
         var selected = $('.fa-circle.fas');
         selected.toggleClass('fas far');
 
-
-
         //rimuovo class 'active' img corrente
         currentImg.removeClass('active');
         //creo condizione se img corrente ==1 add class
@@ -55,13 +53,18 @@ $(document).ready(function(){
         //seleziono solo un cerchio usando this e qnd clicco fa il switch
         $(this).toggleClass('fas far');
 
-        //creo variabile per img corrente
-        // var selectedImg = $('img.active')
-        // selectedImg.removeClass('active');
-        //
+        // creo variabile per img corrente
+        var selectedImg = $('img.active')
+        selectedImg.removeClass('active');
 
-        var index = $(".fa-circle").index(this);
-        $("span").text( "That was div index #" + index );
+        var indice = $(this).index();
+
+        // oppure
+        // var index = $(".fa-circle").index(this);
+        // console.log(index);
+
+        var newImg = $('.slide img').eq(indice);
+        newImg.addClass('active');
 
 
     });
